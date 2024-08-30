@@ -11,7 +11,9 @@ const Header = () => {
 				<Nav />
 				<div className="text-4xl font-semibold">PK</div>
 				<div className=""></div>
-				<Button variant="outline">contact me</Button>
+				<Link href={"/"}>
+					<Button variant="outline">contact me</Button>
+				</Link>
 			</div>
 			<div className="xl:hidden ml-auto">
 				<MobileNav />
