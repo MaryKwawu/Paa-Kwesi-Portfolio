@@ -33,7 +33,7 @@ export default function Home() {
 							</div>
 						</h1>
 						<p className="max-w[500px] mb-10 text-black/80">
-							I am a professional DevSecOps Engineer with more than 7years of
+							I am a professional DevSecOps Engineer with more than 5years of
 							experience"
 						</p>
 						{/* btn & cards */}
@@ -50,15 +50,15 @@ export default function Home() {
 						</div>
 						{/* top skills */}
 						<div className="grid grid-cols-2 gap-2 mt-10 w-1/3">
-							<div className="bg-[#fe5b02] rounded text-center">Azure</div>
 							<div className="bg-[#fe5a02bf] text-white rounded text-center">
 								RabbitMQ
 							</div>
+							<div className="bg-[#fe5b02] rounded text-center">Azure</div>
 
+							<div className="bg-[#e5e5e5] rounded text-center">Kubernetes</div>
 							<div className="bg-black text-white rounded text-center">
 								Jenkins
 							</div>
-							<div className="bg-[#e5e5e5] rounded text-center">Kubernetes</div>
 						</div>
 						{/* photo */}
 						<div className="order-1 xl:order-none mb-8">
