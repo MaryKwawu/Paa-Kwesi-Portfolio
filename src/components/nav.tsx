@@ -14,14 +14,14 @@ const links = [
 	},
 	{
 		name: "About me",
-		path: "/about me",
+		path: "/aboutme",
 	},
 ];
 
 const Nav = () => {
 	const pathname = usePathname();
 	return (
-		<nav className="flex gap-8 ">
+		<nav className="flex gap-8 text-white">
 			{links.map((link, index, item) => {
 				<div className="flex flex-col">Contact</div>;
 				return (

@@ -28,7 +28,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={cn(jetbrainsMono.variable, "container")}>
+			<body
+				className={cn(jetbrainsMono.variable, "container min-h-screen py-6")}
+			>
 				<Header />
 				<StairTransition />
 				<PageTransition>{children}</PageTransition>

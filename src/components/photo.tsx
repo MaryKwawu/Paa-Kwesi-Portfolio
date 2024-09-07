@@ -15,16 +15,6 @@ const Photo = () => {
 				}}
 			>
 				{/* image */}
-				<motion.div
-					initial={{ opacity: 0 }}
-					animate={{
-						opacity: 1,
-						transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
-					}}
-					className="w-[298px] h-[298px] mix-blend-lighten absolute"
-				>
-					<Image src="/" alt={""} priority quality={100} fill className="" />
-				</motion.div>
 			</motion.div>
 		</div>
 	);
