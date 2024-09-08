@@ -12,7 +12,7 @@ const Header = () => {
 				<Nav />
 				<div className="text-4xl font-semibold text-white">PK</div>
 				<div className=""></div>
-				<Link href={"/"}>
+				<Link href={"/contact"}>
 					<Button
 						className="mr-3 text-[#124e70] border-[#41718c]"
 						variant="outline"
@@ -23,10 +23,10 @@ const Header = () => {
 
 				<Image
 					src="/assets/paa-kwesi.png"
-					width={500}
-					height={500}
+					width={600}
+					height={600}
 					alt="profile"
-					className="max-w-[800px] absolute -top-30 -right-10 -z-10"
+					className="max-w-[500px] absolute -top-30 -right-10 -z-10"
 				/>
 			</div>
 			<div className="xl:hidden ml-auto">

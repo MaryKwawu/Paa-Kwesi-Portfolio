@@ -3,8 +3,9 @@
 import * as React from "react";
 import * as SheetPrimitive from "@radix-ui/react-dialog";
 import { cva, type VariantProps } from "class-variance-authority";
-import { IoMdClose } from "react-icons/io";
 import { cn } from "@/lib/utils";
+
+import { IoMdClose } from "react-icons/io";
 
 const Sheet = SheetPrimitive.Root;
 
@@ -30,7 +31,7 @@ const SheetOverlay = React.forwardRef<
 SheetOverlay.displayName = SheetPrimitive.Overlay.displayName;
 
 const sheetVariants = cva(
-	"fixed z-50 gap-4 bg-primary p-6 shadow-lg transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500",
+	"fixed z-50 gap-4 bg-primary p-6 shadow-lg transition ease-in-out data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:duration-300 data-[state=open]:duration-500 dark:bg-slate-950",
 	{
 		variants: {
 			side: {
@@ -107,7 +108,10 @@ const SheetTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
 	<SheetPrimitive.Title
 		ref={ref}
-		className={cn("text-lg font-semibold text-foreground", className)}
+		className={cn(
+			"text-lg font-semibold text-slate-950 dark:text-slate-50",
+			className
+		)}
 		{...props}
 	/>
 ));
@@ -119,7 +123,7 @@ const SheetDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
 	<SheetPrimitive.Description
 		ref={ref}
-		className={cn("text-sm text-muted-foreground", className)}
+		className={cn("text-sm text-slate-500 dark:text-slate-400", className)}
 		{...props}
 	/>
 ));

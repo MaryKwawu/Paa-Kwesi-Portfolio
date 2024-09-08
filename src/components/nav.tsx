@@ -23,7 +23,6 @@ const Nav = () => {
 	return (
 		<nav className="flex gap-8 text-white">
 			{links.map((link, index, item) => {
-				<div className="flex flex-col">Contact</div>;
 				return (
 					<div key={index}>
 						<Link

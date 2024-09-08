@@ -3,7 +3,7 @@
 import { Description } from "@radix-ui/react-dialog";
 import React from "react";
 
-import { FaNodeJs, FaDocker, FaAws } from "react-icons/fa";
+import { FaNodeJs, FaDocker, FaAws, FaJenkins } from "react-icons/fa";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -18,45 +18,9 @@ import {
 	SiCeph,
 	SiIota,
 	SiApifox,
+	SiMqtt,
+	SiArduino,
 } from "react-icons/si";
-
-//about data
-const personalDetails = {
-	title: "Personal Details",
-	Description:
-		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe provident pariatur quibusdam perferendis, culpa beatae, ipsum officiis quis, temporibus aspernatur molestias esse architecto quod. Ratione sunt iste",
-	info: [
-		{
-			fieldName: "Name",
-			fieldValue: "Paa-Kwesi Frimpong",
-		},
-		{
-			fieldName: "Phone",
-			fieldValue: "(+233) 055 000 0000",
-		},
-		{
-			fieldName: "Experience",
-			fieldValue: "8+ Years",
-		},
-		{
-			fieldName: "Nationality",
-			fieldValue: "Ghanaian",
-		},
-		{
-			fieldName: "Email",
-			fieldValue: "paa-kwesi@gmail.com",
-		},
-
-		{
-			fieldName: "Freelance",
-			fieldValue: "Available",
-		},
-		{
-			fieldName: "Language",
-			fieldValue: "English",
-		},
-	],
-};
 
 // experience data
 const experience = {
@@ -165,7 +129,7 @@ const education = {
 const skills = {
 	title: "My skills",
 	Description:
-		"I’m a skilled software developer proficient in Python, Node.js, and JavaScript, with deep expertise in DevOps tools like Kubernetes, Docker, AWS, and Azure. I build robust REST APIs with Flask and craft dynamic frontends using Angular. My experience with PostgreSQL and MongoDB ensures top-notch data management. I maintain code integrity with Git, automate testing with Jasmine and Karma, and utilize IDEs like PyCharm, VSCode, and IntelliJ. Applying OOP, TDD, and Agile methodologies, I deliver high-quality, innovative solutions that exceed expectations.",
+		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe provident pariatur quibusdam perferendis, culpa beatae, ipsum officiis quis, temporibus aspernatur molestias esse architecto quod. Ratione sunt iste ",
 	skilllist: [
 		{
 			icon: <FaAws />,
@@ -177,7 +141,7 @@ const skills = {
 		},
 		{
 			icon: <FaNodeJs />,
-			name: "javascript",
+			name: "nodejs",
 		},
 		{
 			icon: <SiApachekafka />,
@@ -219,6 +183,18 @@ const skills = {
 		{
 			icon: <SiRabbitmq />,
 			name: "Rabbitmq",
+		},
+		{
+			icon: <FaJenkins />,
+			name: "Jenkins",
+		},
+		{
+			icon: <SiMqtt />,
+			name: "Mqtt",
+		},
+		{
+			icon: <SiArduino />,
+			name: "Arduino",
 		},
 	],
 };
@@ -290,7 +266,6 @@ const Resume = () => {
 						<TabsTrigger value="education">Education</TabsTrigger>
 						<TabsTrigger value="skills">Skills</TabsTrigger>
 						<TabsTrigger value="services">Services</TabsTrigger>
-						<TabsTrigger value="personalDetails">Personal Details</TabsTrigger>
 					</TabsList>
 					{/* content */}
 					<div className="min-h-[30px] w-full">
@@ -300,7 +275,7 @@ const Resume = () => {
 								<h3 className="text-4xl font-bold text-white">
 									{experience.title}
 								</h3>
-								<p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">
+								<p className="max-w-[1000px] text-white/60 mx-auto xl:mx-0">
 									{experience.Description}
 								</p>
 
@@ -345,12 +320,7 @@ const Resume = () => {
 											</div>
 										</div>
 										{/* title */}
-										<h2
-											className="text-[42px] 
-                font-bold leading-none 
-                text-white group-hover:text-accent
-                 transition-all duration-500"
-										>
+										<h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accen transition-all duration-500">
 											{service.title}
 										</h2>
 										{/* description */}
@@ -384,7 +354,7 @@ const Resume = () => {
 								<h3 className="text-4xl font-bold text-white">
 									{education.title}
 								</h3>
-								<p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">
+								<p className="max-w-[1000px] text-white/60 mx-auto xl:mx-0">
 									{education.Description}
 								</p>
 
@@ -416,39 +386,7 @@ const Resume = () => {
 								</ScrollArea>
 							</div>
 						</TabsContent>
-						{/* personaldetail */}
-						<TabsContent
-							value="personalDetails"
-							className="w-full text-center xl:text-left "
-						>
-							<div className="flex flex-col gap-[30px]">
-								<h3 className="text-4xl font-bold text-white">
-									{personalDetails.title}
-								</h3>
-								<p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">
-									{personalDetails.Description}
-								</p>
-								<ul className="grid grid-cols-1 xl:grid-cols-2 gap-8 max-w-[620px] mx-auto xl:mx-0">
-									{personalDetails.info.map((item, index) => {
-										return (
-											<div key={index}>
-												<li
-													key={index}
-													className="flex items-center justify-center xl:justify-start gap-4"
-												>
-													<span className="text-white/60">
-														{item.fieldName}
-													</span>
-													<span className="text-xl text-white">
-														{item.fieldValue}
-													</span>
-												</li>
-											</div>
-										);
-									})}
-								</ul>
-							</div>
-						</TabsContent>
+
 						{/* skills */}
 						<TabsContent value="skills" className="w-full h-full ">
 							<div className="flex flex-col gap-[30px]">
@@ -456,7 +394,7 @@ const Resume = () => {
 									<h3 className="text-4xl font-bold text-white">
 										{skills.title}
 									</h3>
-									<p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">
+									<p className="max-w-[1000px] text-white/60 mx-auto xl:mx-0">
 										{skills.Description}
 									</p>
 								</div>
