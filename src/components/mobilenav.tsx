@@ -1,9 +1,12 @@
 "use client";
+
 import React from "react";
+
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { CiMenuFries } from "react-icons/ci";
+import { link } from "fs";
 import Image from "next/image";
 
 const links = [
@@ -11,14 +14,17 @@ const links = [
 		name: "home",
 		path: "/",
 	},
-	{
-		name: "aboutme",
-		path: "/about",
-	},
+
 	{
 		name: "resume",
 		path: "/resume",
 	},
+
+	{
+		name: "about me",
+		path: "/aboutme",
+	},
+
 	{
 		name: "contact",
 		path: "/contact",
@@ -30,15 +36,16 @@ const MobileNav = () => {
 	return (
 		<Sheet>
 			<SheetTrigger className="flex justify-center items-center w-full">
-				<CiMenuFries className="text-[32px] text-accent ml-auto " />
+				<CiMenuFries className="text-[32px] text-accent ml-auto" />
 			</SheetTrigger>
 			<SheetContent className="flex flex-col">
 				{/* logo */}
-				<div className="mt-32 mb-10 text-center text-2xl">
-					<Link href={"/"}>
-						<div className=" text-4xl font-semibold">PK</div>
+				<div className="mt-32 mb-20 text-center text-2xl">
+					<Link href="/">
+						<h1 className="text-4xl font-semibold">PK</h1>
 					</Link>
 				</div>
+
 				{/* nav */}
 				<nav className="flex flex-col justify-center items-center gap-8">
 					<Image
@@ -52,7 +59,7 @@ const MobileNav = () => {
 						return (
 							<div key={index}>
 								<Link
-									href={"link.path"}
+									href={link.path}
 									className={`${
 										link.path === pathname &&
 										"text-accent border-b-2 border-accent"
