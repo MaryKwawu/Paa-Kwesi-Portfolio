@@ -56,7 +56,7 @@ const Contact = () => {
 					opacity: 1,
 					transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
 				}}
-				className="py-40"
+				className="py-20"
 			>
 				<div className="container mx-auto">
 					<div className="flex flex-col xl:flex-row gap-[30px]">
@@ -106,25 +106,20 @@ const Contact = () => {
 										}}
 									/>
 								</div>
-								{/* select */}
-								<Select
-									onValueChange={(value) => {
-										setService(value);
+
+								<select
+									onChange={(e) => {
+										setService(e.target.value);
 									}}
+									className="h-[48px] w-full rounded-md border border-white/60 bg-primary px-4  text-base text-white/60 placeholder:text-white/10 focus:border-accent outline-none"
 								>
-									<SelectTrigger className="w-full">
-										<SelectValue placeholder="Select a service" />
-									</SelectTrigger>
-									<SelectContent>
-										<SelectGroup>
-											<SelectLabel>Select a service</SelectLabel>
-											<SelectItem value={"est"}>IOTt</SelectItem>
-											<SelectItem value={"cst"}>Code Infrastructure</SelectItem>
-											<SelectItem value={"mst"}>DevOps</SelectItem>
-										</SelectGroup>
-									</SelectContent>
-								</Select>
-								{/* textarea */}
+									<option disabled>Select a service</option>
+									<option value="IoT">IoT</option>
+									<option value="Code Infrastructure">
+										Code Infrastructure
+									</option>
+									<option value="DevOps">DevOps</option>
+								</select>
 								<Textarea
 									required
 									className="h-[200px]"

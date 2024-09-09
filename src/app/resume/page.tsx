@@ -1,11 +1,8 @@
 "use client";
 
-import { Description } from "@radix-ui/react-dialog";
 import React from "react";
 
 import { FaNodeJs, FaDocker, FaAws, FaJenkins } from "react-icons/fa";
-import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
 
 import {
 	SiGrafana,
@@ -211,18 +208,6 @@ import {
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 import { motion } from "framer-motion";
 import { BsArrowDownRight } from "react-icons/bs";
-import Socials from "@/components/socials";
-import Social from "@/components/socials";
-
-const handleDownload = () => {
-	const cvUrl = "";
-	const link = document.createElement("a");
-	link.href = cvUrl;
-	link.download = "";
-	document.body.appendChild(link);
-	link.click();
-	document.body.removeChild(link);
-};
 
 const Resume = () => {
 	return (
@@ -236,26 +221,6 @@ const Resume = () => {
 		>
 			<div className="pt-12">
 				{/* btn & socials */}
-
-				<div className="flex flex-col xl:flex-row items-center gap-8 pb-36">
-					<div>
-						<Button
-							onClick={handleDownload}
-							variant="outline"
-							size="lg"
-							className="uppercase flex items-center gap-2"
-						>
-							<span>Download Cv</span>
-							<FiDownload className="text-xl" />
-						</Button>
-					</div>
-					<div className="mb-8 xl:mb-0">
-						<Social
-							containerStyles="flex gap-6"
-							iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:text-primary hover:transition-all duration-500"
-						/>
-					</div>
-				</div>
 
 				<Tabs
 					defaultValue="experience"
@@ -275,7 +240,7 @@ const Resume = () => {
 								<h3 className="text-4xl font-bold text-white">
 									{experience.title}
 								</h3>
-								<p className="max-w-[1000px] text-white/60 mx-auto xl:mx-0">
+								<p className="max-w-[900px] text-white/60 mx-auto xl:mx-0">
 									{experience.Description}
 								</p>
 
@@ -354,18 +319,18 @@ const Resume = () => {
 								<h3 className="text-4xl font-bold text-white">
 									{education.title}
 								</h3>
-								<p className="max-w-[1000px] text-white/60 mx-auto xl:mx-0">
+								<p className="max-w-[900px] text-white/60 mx-auto xl:mx-0">
 									{education.Description}
 								</p>
 
-								<ScrollArea className="h-[400px]">
+								<ScrollArea>
 									<ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
 										{education.items.map((item, index) => {
 											return (
 												<div key={index}>
 													<li
 														key={index}
-														className="bg-[#41718c] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1 h-full"
+														className="bg-[#41718c] min-w-80 min-h-full py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
 													>
 														<span className="text-accent">{item.duration}</span>
 														<h3 className="text-xl max-w-[260px] text-white text-center lg:text-left ">
@@ -394,7 +359,7 @@ const Resume = () => {
 									<h3 className="text-4xl font-bold text-white">
 										{skills.title}
 									</h3>
-									<p className="max-w-[1000px] text-white/60 mx-auto xl:mx-0">
+									<p className="max-w-[900px] text-white/60 mx-auto xl:mx-0">
 										{skills.Description}
 									</p>
 								</div>

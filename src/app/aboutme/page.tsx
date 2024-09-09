@@ -46,10 +46,10 @@ const AboutMe = () => {
 				<h3 className="text-4xl font-bold text-white">
 					{personalDetails.title}
 				</h3>
-				<p className="max-w-[800px] text-white/60 mx-auto xl:mx-0">
+				<p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
 					{personalDetails.Description}
 				</p>
-				<ul className="grid grid-cols-1 xl:grid-cols-2 gap-10  mx-auto xl:mx-0">
+				<ul className="grid grid-cols-1 xl:grid-cols-2 gap-8  mx-auto xl:mx-0">
 					{personalDetails.info.map((item, index) => {
 						return (
 							<div key={index}>
