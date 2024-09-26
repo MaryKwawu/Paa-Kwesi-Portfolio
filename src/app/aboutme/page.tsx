@@ -7,15 +7,15 @@ const personalDetails = {
 	info: [
 		{
 			fieldName: "Name",
-			fieldValue: "Paa-Kwesi Frimpong",
+			fieldValue: "Paa-Kwasi Frimpong",
 		},
 		{
 			fieldName: "Phone",
-			fieldValue: "(+233) 055 000 0000",
+			fieldValue: "(+233) 558 137 950",
 		},
 		{
 			fieldName: "Experience",
-			fieldValue: "8+ Years",
+			fieldValue: "4+ Years",
 		},
 		{
 			fieldName: "Nationality",
@@ -23,7 +23,7 @@ const personalDetails = {
 		},
 		{
 			fieldName: "Email",
-			fieldValue: "paa-kwesi@gmail.com",
+			fieldValue: "ppkfrimpong@gmail.com",
 		},
 
 		{

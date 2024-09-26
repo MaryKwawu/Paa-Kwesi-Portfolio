@@ -10,11 +10,11 @@ const socials = [
 	},
 	{
 		icon: <FaLinkedin />,
-		path: "",
+		path: "https://www.linkedin.com/in/paa-kwasi-frimpong/",
 	},
 	{
 		icon: <FaTwitter />,
-		path: "",
+		path: "https://x.com/frimps6_5",
 	},
 	{
 		icon: <FaInstagram />,

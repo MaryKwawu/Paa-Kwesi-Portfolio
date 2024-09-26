@@ -23,8 +23,13 @@ import {
 const experience = {
 	title: "My experience",
 	Description:
-		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe provident pariatur quibusdam perferendis, culpa beatae, ipsum officiis quis, temporibus aspernatur molestias esse architecto quod. Ratione sunt iste ",
+		"As a lead DevOps engineer, I have designed and implemented complex systems and automation workflows, delivering efficient solutions to challenging problems. My expertise spans across Kubernetes, AWS, and various automation tools, supported by solid skills in bash scripting and infrastructure management. I have successfully led projects that enhance operational efficiency and streamline deployment pipelines.",
 	items: [
+		{
+			company: "Moblers",
+			position: "Senior DevOps Enginer",
+			duration: "March 2022 - Present",
+		},
 		{
 			company: "Global PayEX",
 			position: "DevOps Engineer",
@@ -39,11 +44,6 @@ const experience = {
 			company: "The Quantum Group Ltd",
 			position: "DevOps Lead",
 			duration: "Sep 2020 -  Aug 2021",
-		},
-		{
-			company: "Vodafone",
-			position: "Internship",
-			duration: "Jun 2018 - Aug 2018",
 		},
 	],
 };
@@ -100,7 +100,7 @@ const education = {
 	icon: "",
 	title: "My education",
 	Description:
-		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe provident pariatur quibusdam perferendis, culpa beatae, ipsum officiis quis, temporibus aspernatur molestias esse architecto quod. Ratione sunt iste ",
+		"I studied Computer Science at KNUST and specialized in security topics at the International CyberSecurity Institute in the UK.",
 	items: [
 		{
 			Institution: "Udacity",
@@ -126,7 +126,7 @@ const education = {
 const skills = {
 	title: "My skills",
 	Description:
-		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe provident pariatur quibusdam perferendis, culpa beatae, ipsum officiis quis, temporibus aspernatur molestias esse architecto quod. Ratione sunt iste ",
+		"These are the essential skills I have gathered over my ever growing career as a DevOps engineer",
 	skilllist: [
 		{
 			icon: <FaAws />,

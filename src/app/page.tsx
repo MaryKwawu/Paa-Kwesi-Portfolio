@@ -20,11 +20,11 @@ export default function Home() {
 							<div className="text-white">My name</div>
 							<div>
 								<span className="font-normal text-white">is </span>{" "}
-								<span className="font-semibold text-accent">Paa-Kwesi </span>
+								<span className="font-semibold text-accent">Paa-Kwasi </span>
 							</div>
 						</h1>
 						<p className="max-w[500px] mb-10 text-white">
-							I am a professional DevSecOps Engineer with more than 5years of
+							I am a professional DevSecOps Engineer with over 4years of
 							experience
 						</p>
 						{/* btn & cards */}
@@ -42,17 +42,17 @@ export default function Home() {
 						{/* top skills */}
 						<div className="grid grid-cols-2 gap-2 mt-10 xl:w-1/3 w-1/2">
 							<div className="bg-[#769e9a] text-white rounded text-center">
-								RabbitMQ
-							</div>
-							<div className="bg-[#769e9a] text-white rounded text-center">
-								Azure
-							</div>
-
-							<div className="bg-[#769e9a] text-white rounded text-center">
 								Kubernetes
 							</div>
 							<div className="bg-[#769e9a] text-white rounded text-center">
-								Jenkins
+								AWS
+							</div>
+
+							<div className="bg-[#769e9a] text-white rounded text-center">
+								CI/CD
+							</div>
+							<div className="bg-[#769e9a] text-white rounded text-center">
+								Bash Scripting
 							</div>
 						</div>
 						{/* projects image */}
