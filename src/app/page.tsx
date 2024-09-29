@@ -57,11 +57,10 @@ export default function Home() {
 						</div>
 						{/* projects image */}
 						<p className="font-semibold mt-16 text-xl"> Latest Projects</p>
-						<div className=" mt-10 grid xl:grid-cols-3 gap-32">
+						<div className="mt-10 grid xl:grid-cols-4 gap-16">
 							<div
-								className="h-96 w-96"
+								className="h-56 w-56"
 								style={{
-									backgroundImage: "url(/assets/card.png)",
 									backgroundSize: "120%",
 									backgroundRepeat: "no-repeat",
 									backgroundColor: "#769e9a",
@@ -70,9 +69,8 @@ export default function Home() {
 								}}
 							></div>
 							<div
-								className="h-96 w-96 mt-16 "
+								className="h-56 w-56 mt-16 "
 								style={{
-									backgroundImage: "url(/assets/card2.png)",
 									backgroundSize: "120%",
 									backgroundRepeat: "no-repeat",
 									backgroundColor: "#769e9a",
@@ -81,9 +79,18 @@ export default function Home() {
 								}}
 							></div>
 							<div
-								className="h-96 w-96 mt-32"
+								className="h-56 w-56 mt-32"
 								style={{
-									backgroundImage: "url(/assets/card3.png)",
+									backgroundSize: "110%",
+									backgroundRepeat: "no-repeat",
+									backgroundColor: "#769e9a",
+									backgroundPosition: "center",
+									borderRadius: "8px",
+								}}
+							></div>
+							<div
+								className="h-56 w-56 mt-64"
+								style={{
 									backgroundSize: "110%",
 									backgroundRepeat: "no-repeat",
 									backgroundColor: "#769e9a",
